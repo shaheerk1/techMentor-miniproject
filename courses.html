@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Courses</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="navBar">
+        <div class="logo">
+          <h3><a href="index.html">techMentor</a></h3>
+        </div>
+        <div class="navigations">
+          <a href="courses.html">Courses</a>
+          <a href="about.html">About Us</a>
+          <a href="offers.html">Offers</a>
+        </div>
+        <div class="signUpDiv">
+          <a class="logIn" href="#">Log In</a>
+          <a class="signUp" href="#">Sign Up</a>
+        </div>
+      </div>
+      <div class="titleText">
+        <div class="mainText"><h1>Courses,</h1></div>
+        <div class="filterSection">
+          <h4>Filter courses.</h4>
+          <div class="filters">
+            <div class="sliderContainer">
+              <label for="Price">Price </label>
+              <p>Low</p>
+              <input
+                onchange="rangeFunc()"
+                id="rangeSelector"
+                class="slider"
+                type="range"
+                min="20"
+                max="200"
+                value="130"
+              />
+              <p>High</p>
+            </div>
+            <select
+              onchange="selectFunc()"
+              id="colorSelector"
+              name="category"
+              id="courseCategory"
+            >
+              <option value="All">All</option>
+              <option value="After A/L">After A/L</option>
+              <option value="After O/L">After O/L</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="courseContainer">
+        <div id="web" class="courseCard">
+          <img src="./images/courses/web.jpg" alt="courseCard" />
+          <h3>Web Development</h3>
+          <p>by Will Smith</p>
+          <section>Duration 57 weeks</section>
+          <div class="price">125.00</div>
+        </div>
+        <div id="mobile" class="courseCard">
+          <img src="./images/courses/mobile.png" alt="courseCard" />
+          <h3>Mobile App Development</h3>
+          <p>by Will Smith</p>
+          <section>Duration 57 weeks</section>
+          <div class="price">120.00</div>
+        </div>
+        <div id="digiMark" class="courseCard">
+          <img src="./images/courses/digital-marketting.jpg" alt="courseCard" />
+          <h3>Digital Marketting</h3>
+          <p>by Will Smith</p>
+          <section>Duration 57 weeks</section>
+          <div class="price">100.00</div>
+        </div>
+        <div id="uiux" class="courseCard">
+          <img src="./images/courses/uiux.jpg" alt="courseCard" />
+          <h3>UI/UX Design</h3>
+          <p>by Will Smith</p>
+          <section>Duration 57 weeks</section>
+          <div class="price">50.00</div>
+        </div>
+        <div id="seo" class="courseCard">
+          <img src="./images/courses/seo.jpg" alt="courseCard" />
+          <h3>SEO</h3>
+          <p>by Will Smith</p>
+          <section>Duration 57 weeks</section>
+          <div class="price">140.00</div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footerDivs">
+          <p>&copy;2020 techMentor, Inc</p>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="footerDivs">
+          <h5 class="contact"><a href="contact.html">Contact Us</a></h5>
+          <p>+94777334477</p>
+          <p>techmentor@info.com</p>
+        </div>
+        <div class="footerDivs"><h3>techMentor</h3></div>
+        <div class="footerDivs"></div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
